@@ -2,10 +2,10 @@
 
 Welcome, I'm Daniel - an analyst, developer and musician.
 
-Github Projects [go here](https://github.com/DanielDewberry)
+Github Projects (when I publish them) will [go here](https://github.com/DanielDewberry)
 
 
-## A couple of my music tracks
+## A few of my music tracks
 
 My latest track: 
 <iframe width="25%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/397973658%3Fsecret_token%3Ds-1R8J7&color=%2309080c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
