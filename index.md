@@ -5,7 +5,7 @@ Welcome, I'm Daniel - an analyst, developer and musician.
 [Contact me](mailto:daniel.w.dewberry@gmail.com)
 
 
-##Github Projects 
+## Github Projects 
 
 When I publish them, projects will [go here](https://github.com/DanielDewberry)
 
