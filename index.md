@@ -1,6 +1,8 @@
 # Welcome to my domain
 
-Welcome, I'm Daniel - an analyst, developer and musician.
+Welcome, I'm Daniel - an analyst, developer and musician.  
+
+[Contact me](mailto:daniel.w.dewberry@gmail.com)
 
 Github Projects (when I publish them) will [go here](https://github.com/DanielDewberry)
 
