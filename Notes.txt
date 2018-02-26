@@ -1,3 +1,4 @@
 https://pages.github.com/
 https://guides.github.com/features/mastering-markdown/
 http://jekyllthemes.org/page1/
+https://gist.github.com/developius/c81f021eb5c5916013dc

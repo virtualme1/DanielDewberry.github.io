@@ -1,6 +1,15 @@
 # Welcome to my domain
 
-It's where my stuff is going to go
+Welcome, I'm Daniel - an analyst, developer and musician.
 
-[My latest track](https://soundcloud.com/temporalflux/itsinmyblood/s-1R8J7)
+Github Projects [go here](https://github.com/DanielDewberry)
+
+
+My latest track
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/397973658%3Fsecret_token%3Ds-1R8J7&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+One of my favorite demo tracks
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348097569%3Fsecret_token%3Ds-fOK7M&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
