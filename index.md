@@ -3,4 +3,4 @@
 It's where ma stuff is going to go
 
 
-![Check out my latest track](https://soundcloud.com/temporalflux/itsinmyblood/s-1R8J7)
+https://soundcloud.com/temporalflux/itsinmyblood/s-1R8J7 - automatic!
