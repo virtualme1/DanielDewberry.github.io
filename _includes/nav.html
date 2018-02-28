@@ -1,6 +1,17 @@
-  <nav>
-    <ul>
-        <li><a href="/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
-        <li><a href="news.html" class="{% if page.url == '/news.html' %}current{% endif %}">News</a></li>
-    </ul>
-  </nav>
+<div class="topnav" id="myTopnav">
+    <a href="/" class="{% if page.url == '/' %}current{% endif %}">Home</a>
+    <!--<a href="news.html" class="{% if page.url == '/news.html' %}current{% endif %}">News</a> -->
+    <a href="about.html" class="{% if page.url == '/about.html' %}current{% endif %}">About me</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
