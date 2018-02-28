@@ -1,0 +1,6 @@
+#! /bin/bash
+# Daniel W. Dewberry - 2018
+
+# list the $PATH locations
+echo $PATH | tr : '\n' | sort
+

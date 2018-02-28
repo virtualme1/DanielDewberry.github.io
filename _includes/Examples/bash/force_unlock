@@ -1,0 +1,31 @@
+#!/bin/bash
+# Daniel W. Dewberry - 2018
+
+# You can delete the lock file with the following command:
+
+if [ -e /var/lib/apt/lists/lock ]
+then
+    sudo rm -i /var/lib/apt/lists/lock
+else
+    echo "/var/lib/apt/lists/lock does not exist"
+fi
+
+
+# You may also need to delete the lock file in the cache directory
+
+
+if [ -e /var/cache/apt/archives/lock ]
+then
+    sudo rm -i /var/cache/apt/archives/lock
+else
+    echo "/var/cache/apt/archives/lock does not exist"
+fi
+
+
+if [ -e /var/lib/dpkg/lock ]
+then
+    sudo rm -i /var/lib/dpkg/lock
+else
+    echo "/var/lib/dpkg/lock does not exist"
+fi
+

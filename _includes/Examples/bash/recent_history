@@ -1,0 +1,18 @@
+#! /bin/bash
+# Daniel W. Dewberry - 2018
+
+# Create the regular expression to test against
+re='^[0-9]+$'
+
+# $1 is the first argument which 
+if ! [[ $1 =~ $re ]] ; then
+   #  Write to sterr
+   echo "error: Not a number.  Usage:\n\t <number> [options]" >&2
+   exit 1
+else
+    # feed the bash history into the tail program to get the final <number>
+    # of lines.  $1 is the first parameter, $2 the second etc... 
+    # $@ is all parameters, which are unpacked and passed to tail
+    less ~/.bash_history | tail -n $@
+fi
+

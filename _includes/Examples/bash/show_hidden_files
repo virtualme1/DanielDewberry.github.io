@@ -1,0 +1,5 @@
+#! /bin/bash
+# Daniel W. Dewberry - 2018
+
+ls -a | grep '^\.[a-zA-Z0-9]'
+

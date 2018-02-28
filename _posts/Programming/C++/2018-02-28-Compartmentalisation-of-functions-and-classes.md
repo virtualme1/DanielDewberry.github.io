@@ -59,7 +59,7 @@ If I were to alter `message.cpp` in some way, then `message.o`, `main.o`  and th
 
 ## Makefile
 
-`make` compares the timestamps of files to their dependencies, and takes action accordingly.  If a source file has been updated since it was last compiled, it will be recompiled as will any target which is dependent upon it.  
+`make` compares the timestamps of files to their dependencies, and takes action accordingly.  If a source file has been updated since it was last compiled, it will be recompiled as will any target which is dependent upon it.
 
 
 `A makefile`  further speeds up and simpilies the process by running with a single command invokation and performing the necessary work.
@@ -77,6 +77,9 @@ clang++ -c main.cpp -o main.o
 clang++ -c message.cpp -o message.o
 clang++  main.o message.o -o message_printer
 ```
+
+I included two `.PHONY` targets, targets which are not files, which allow us to remove the object (`.o`) files by invoking `make clean` or remove the object files and the executable by invoking `make purge`.
+
 
 ## Summary 
 
