@@ -8,7 +8,7 @@ category: programming
 # Using 'make' to make life easier
  
 ## The problem
-I was recently asked if I would create a [makefile](https://www.gnu.org/software/make/) for someone to make it easier for them to update their *Nix [postfix](http://www.postfix.org/) setup.  Challenge accepted!
+I was recently asked whether I could create a [makefile](https://www.gnu.org/software/make/) to simlify a *Nix [postfix](http://www.postfix.org/) update process.  Challenge accepted!
 
 > I have a fairly complex postfix setup with multiple files which when you change things you have to execute multiple commands to refresh the configs and start again the postfix function.
 > I'd like to have something where you call make and it just does the steps it needs to refresh the config files and then restart postfix
@@ -96,7 +96,7 @@ helo_checks.db: helo_checks
     postmap /etc/postfix/helo_checks
 ```
 
-Now my friend only has to run [`sudo make`](https://www.gnu.org/software/make/) from the [postfix](http://www.postfix.org/) directory in order to: 
+Now to process the updates, they only need to run [`sudo make`](https://www.gnu.org/software/make/) from the [postfix](http://www.postfix.org/) directory in order to: 
 * update all of the hashed configurations dependency files
 * update the aliases
 * restart [postfix](http://www.postfix.org/)
