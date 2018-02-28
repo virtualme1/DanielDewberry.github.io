@@ -14,13 +14,19 @@ I was recently asked whether I could create a [makefile](https://www.gnu.org/sof
 > I'd like to have something where you call make and it just does the steps it needs to refresh the config files and then restart postfix
 but i can't find a solution that works out of the box without custom scripting a dedicated progam just for that type of 'make' call.
 
-This sounds interesting; challenge accepted.  First, [`make`](https://www.gnu.org/software/make/) requires 'source' files and output files, the timestamps of which are compared and commands run if necessary.  Second, how does [postfix](http://www.postfix.org/) work?  To paraphrase:
+This sounds interesting; challenge accepted.
+
+First, [`make`](https://www.gnu.org/software/make/) requires 'source' files and output files, the timestamps of which are compared and commands run if necessary. 
+
+Second, how does [postfix](http://www.postfix.org/) work?
+
+To paraphrase:
 
 > Postmap creates a hashed .db file for each of the configuration files 'relay-domains', 'relay-routes'  and so on. You could compare the timestamp of the creation of the .db file against the non-hashed configuration files, and with the exception of the `newaliases` command (global system mail aliases affect /etc/aliases.db based on /etc/aliases) and the `systemctl` call.
 
 Great, given input files, we create output files; [`make`](https://www.gnu.org/software/make/) can handle that.
 
-Firstly, recall that [`make`](https://www.gnu.org/software/make/) compares the timestamp of a 'target' with its dependencies on a dependency line.  If one or more of the dependencies are newer than the target, dependency lines are initiated for each dependency until actions are performed.
+Recall that [`make`](https://www.gnu.org/software/make/) compares the timestamp of a 'target' with its dependencies on a dependency line.  If one or more of the dependencies are newer than the target, dependency lines are initiated for each dependency until actions are performed.
 
 ```makefile
 target: dependency1 dependency2 dependency3 dependencyN # Dependeny line
