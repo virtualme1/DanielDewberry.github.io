@@ -2,7 +2,7 @@
 layout: default
 title: Using Makefiles to help with tasks unrelated to programming
 meta: Makefiles can be used to perform actions which are unrelated to programming
-category: programming
+categories: [programming,cpp,make,makefiles]
 ---
 
 # Using 'make' to make life easier

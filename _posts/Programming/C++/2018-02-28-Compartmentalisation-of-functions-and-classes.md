@@ -2,7 +2,7 @@
 layout: default
 title: Compartmentalising C++ projects
 meta: Split up your C++ projects and use a makefile in order to boost efficiency 
-category: programming
+categories: [programming,cpp,make,makefiles]
 ---
 
 # Compartmentalising functions and classes for reuse and build efficiency
@@ -70,7 +70,10 @@ A [`makefile`](https://www.gnu.org/software/make/)   further speeds up and simpi
 {% include Examples/cpp/compartmentalisation/makefile %}
 ```
 
-To invoke the process, run [`makefile`](https://www.gnu.org/software/make/)  from the working directory.
+The header files have been commented out as it may not be desireable to compile the source file if you have only made changes to the header by adding comments or further declarations.  Removing the `#` will make the targets depend upon `message.h` and therefore trigger compilation of `message.cpp` and `main.cpp` (and by extension, build the executable from `message_printer.cpp`).  It is possible to use [`makefile`](https://www.gnu.org/software/make/)  conditionals to create a switch which toggles this functionality.  That will be coverred in a separate article.
+
+
+To invoke the process, run [`make`](https://www.gnu.org/software/make/)  from the working directory.
 
 ```bash
 $ make

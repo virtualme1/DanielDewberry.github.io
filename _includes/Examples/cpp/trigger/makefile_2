@@ -1,13 +1,19 @@
 CC=clang++
-	
+TRIGGER=off
+
+ifeq ($(TRIGGER),on)
+    message_h=message.h
+else
+    message_h=$()
+endif
+
 message_printer : main.o message.o
 	$(CC)  main.o message.o -o message_printer
 
-
-main.o : main.cpp message.cpp # message.h
+main.o : main.cpp message.cpp $(message_h)
 	$(CC) -c main.cpp -o main.o
     
-message.o: message.cpp # message.h
+message.o: message.cpp $(message_h)
 	$(CC) -c message.cpp -o message.o
 
 .PHONY : purge clean
@@ -16,5 +22,5 @@ clean:
 	rm *.o
 	
 purge:
-	- rm *.o
-	- rm message_printer
+	-rm *.o 
+	-rm message_printer 
